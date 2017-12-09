@@ -1,0 +1,90 @@
+.marginadjust { 
+	margin: 1.5658rem 0;
+ }
+
+ .iconmarginadjust {
+ 	margin: 1.6rem 0;
+ }
+
+ .customtweet {
+ 	margin-bottom: 0!important;
+ }
+
+ .fontsize1 {
+ 	font-size: 18px;
+ }
+
+ .filters {
+ 	text-align: center;
+ 	padding-top: 4.5em;
+ 	padding-bottom: 3.5em;
+ }
+
+ .selectcorrection{
+ 	text-align: center!important;
+ 	padding: 0!important;
+ 	border: transparent!important;
+ 	background: transparent!important;
+ 	height: auto!important;
+ }
+
+.filters .btn{
+ 	width: 12em!important;
+ 	pointer-events: : none!important;
+ }
+
+.filters .dropdown__content {
+	pointer-events: none!important;
+}
+
+.formclass{
+	padding: 0 16vw;
+}
+
+.featureiconfix{
+	padding-right: 1em;
+	max-width: 100%;
+}
+
+@media(max-width: 768px) {
+	.fix1 {margin-bottom: 10px}
+	.filters .btn{width: 10em!important;}
+	.formclass{padding: 0 4vw;}
+	.process-stepper{font-size: 15px}
+	.menu-horizontal{text-align: center;font-size: 16px;}
+	.section {margin-left: 20px;margin-right: 20px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
