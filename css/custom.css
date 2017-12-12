@@ -62,3 +62,8 @@
 .no-margin {
    margin: 0 !important;
 }
+
+.bar-1 > .menu-horizontal > li > a {
+    font-size: 2em;
+    font-weight: bold;
+}
