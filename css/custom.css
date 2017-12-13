@@ -53,6 +53,9 @@
 	.process-stepper { font-size: 15px }
 	.menu-horizontal { text-align: center;font-size: 16px; }
 	.section { margin-left: 20px;margin-right: 20px }
+	#maintitleh1{line-height: 9vh; margin-top: -0.5vh!important;}
+	.headerbutton{margin-top: 3vh; width:45vw;}
+	.mainheader{margin:3vh 0!important; padding: 2vh 3vh!important;}
 }
 
 .no-padding {
@@ -75,3 +78,73 @@
     font-size: 1em;
     font-weight: bold;
 }
+
+#maintitleh2{
+	margin-bottom: 0px; 
+	font-size: 5.5vh;
+	font-weight: 700;
+}
+
+#maintitleh1{
+	font-size: 8vh; 
+	margin-top: -2.5vh;
+	margin-bottom: 1vh;
+	font-weight: 700;
+}
+
+#maintitlep1{
+	margin-bottom: 0px;
+	margin-top: 2.8vh;
+}
+
+#maintitlep{
+	font-weight: 900;
+}
+
+.divbar{
+	border: 0.75px solid white;
+}
+
+.mainheader{
+	padding: 17vh 2vw;
+}
+
+@media(min-width: 768px) {
+	#headerbuttontext{
+		font-size: 1.1em!important;
+		font-weight: 900!important;
+	}
+}
+
+.blur{
+	filter:blur(5px);
+}
+#semiboldid{
+	font-weight: 600!important;
+}
+#boldid{
+	font-weight: 900!important;
+}
+.ticketcolor{
+	background-color: rgba(229,166,137,0.20)!important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

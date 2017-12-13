@@ -63,20 +63,22 @@
             </div>
         </div>
         <div class="main-container">
-            <section class="cover imagebg text-center height-100" data-overlay="4" style="height: 90vh;">
+            <section class="cover imagebg text-center height-100" data-overlay="4" style="height: 92vh;">
                 <div class="background-image-holder">
                     <img alt="background" src="img/planebg.jpg">
                 </div>
-                <div class="container pos-vertical-center" style="padding: 17vh 2vw;">
+                <div class="container pos-vertical-center mainheader">
                     <div class="row">
                         <div class="col-sm-8">
-                            <h1> Compra y vende pasajes en avión</h1>
-                            <p class="lead"> Somos la mejor opción para encontrar pasajes en avión al mejor precio. ¡Conoce tus derechos como consumidor!</p>
-                            <a class="btn btn--primary btn--lg type--uppercase" href="/buy1.html">
-                                <span class="btn__text">Comprar<br></span>
+                            <h2 id="maintitleh2">COMPRA Y VENDE<br></h2><h1 id="maintitleh1">PASAJES EN AVIÓN</h1>
+                            <div class="divbar"></div>
+                            <p class="lead" id="maintitlep1"> Somos la mejor opción para encontrar pasajes en avión al mejor precio. 
+                            <p class="lead" id="maintitlep"> ¡Conoce tus derechos como consumidor!</p>
+                            <a class="headerbutton btn btn--primary btn--lg type--uppercase" href="/buy1.html">
+                                <span id="headerbuttontext" class="btn__text">Comprar<br></span>
                             </a>
-                            <a class="btn btn--primary btn--lg type--uppercase" href="/compensations1.html">
-                                <span class="btn__text">reclamar<br></span>
+                            <a class="headerbutton btn btn--primary btn--lg type--uppercase" href="/compensations1.html">
+                                <span id="headerbuttontext" class="btn__text">reclamar<br></span>
                             </a>
                         </div>
                     </div>
@@ -132,17 +134,22 @@
                     </div>
                 </div>
             </section>
-            <section class="text-center bg--secondary" id="news">
+            <section class="switchable imagebg" data-overlay="4">
+                <div class="background-image-holder"> <img alt="background" src="img/hero-1.jpg"> </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-9 col-md-7">
-                            <div class="tweets-feed slider text-center customtweet" data-feed-name="VenloEs" data-amount="5" data-paging="true" data-children="0"></div>
-                            <a class="btn btn--icon bg--twitter" href="www.twitter.com/venloes">
-                                <span class="btn__text">
-                                    <i class="socicon socicon-twitter"></i>
-                                    ¡Síguenos en Twitter!
-                                </span>
-                            </a>
+                        <div class="col-sm-6 col-md-5">
+                            <div class="switchable__text">
+                                <h2>Follow us for news, updates and competitions</h2>
+                                <p class="lead"> Launching an attractive and scalable website quickly and affordably is important for modern startups — Stack offers massive value without looking 'bargain-bin'. </p>
+                                <a class="btn btn--icon bg--twitter" href="#"> <span class="btn__text">
+                            <i class="socicon socicon-twitter"></i>
+                            Visit @mrareweb on Twitter
+                        </span> </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="tweets-feed tweets-feed-1 bg--secondary" data-feed-name="venloes" data-amount="3"></div>
                         </div>
                     </div>
                 </div>
