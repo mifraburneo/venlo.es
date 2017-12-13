@@ -11,8 +11,8 @@
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
-
     </head>
     <body data-smooth-scroll-offset="77">
     <div class="nav-container">
@@ -115,8 +115,8 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-xs-6 fix1">
-                            <a class="btn">
-                                <select class="btn__text selectcorrection">
+                            <div class="input-select">
+                                <select id="select-origen">
                                     <option selected="" value="Default">Destino</option>
                                     <option value="Small">Piura</option>
                                     <option value="Medium">Lima</option>
@@ -124,11 +124,11 @@
                                     <option value="AQP">Arequipa</option>
                                     <option value="AQP">Cuzco</option>
                                 </select>
-                            </a>
+                            </div>
                         </div>
                         <div class="col-md-2 col-xs-6 fix1">
-                            <a class="btn">
-                                <select class="btn__text selectcorrection">
+                            <div class="input-select">
+                                <select>
                                     <option selected="" value="Default">Origen</option>
                                     <option value="Small">Piura</option>
                                     <option value="Medium">Lima</option>
@@ -136,7 +136,7 @@
                                     <option value="AQP">Arequipa</option>
                                     <option value="AQP">Cuzco</option>
                                 </select>
-                            </a>
+                            </div>
                         </div>
                         <div class="col-md-2 col-xs-6 fix1">
                             <a class="btn" href="#">
@@ -297,7 +297,6 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/datepicker.js"></script>
-
     </body>
 
 </html>
