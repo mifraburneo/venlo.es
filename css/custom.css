@@ -75,3 +75,35 @@
     font-size: 1em;
     font-weight: bold;
 }
+
+.main-page-faq {
+	font-size: 1.15em;
+}
+
+@media(min-width: 768px) {
+	.who-are-we-right {
+		padding-left: 50px !important;
+	}	
+}
+
+@media(max-width: 767px) {
+	.who-are-we-right {
+		margin-bottom: 35px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+.slider[data-paging="true"]:not(section) .flickity-page-dots {
+    bottom: -1.5em;
+}
+
+.slider[data-paging="true"]:not(section) {
+    margin-bottom: 0.714286em;
+}
+
+.who-are-we-right h3 {
+	border-bottom: 1px solid white;
+    padding-bottom: 13px;
+    width: 200px;
+}
