@@ -267,10 +267,44 @@
 	}
 }
 
+.inp-fixed-bank-info {
+	text-align: center;
+}
+
+.inp-bank-info-income {
+	font-weight: bold;
+}
 
 
+/* CSS classes of boxes for selling tickets */
+.sell-ticket-box span{
+	background: linear-gradient(to right, rgba(9,132,240,1) 37%, rgba(10,132,239,1) 38%, rgba(49,115,185,1) 85%, rgba(50,115,184,1) 86%);
+	display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 26px;
+    min-width: 65px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 3;
+    top: 1.2em;
+    right: 1.9em;
+}
 
+.sell-ticket-box img{
+	border-radius: 10px 10px 0px 0px;
+	margin-bottom: 0px;
+}
 
+.sell-ticket-box .info-part {
+	border: 1px solid #9C9C9C;
+	border-top: none;
+	border-radius: 0px 0px 10px 10px;
+}
 
-
-
+/* END OF CSS classes of boxes for selling tickets */
