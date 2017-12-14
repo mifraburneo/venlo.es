@@ -171,8 +171,8 @@
 }
 
 .simple-box-effect {
-	background-color: #fafafa;
-    padding: 20px;
+	background-color: #f7f7f7;	
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #dddddd;
     -webkit-box-shadow: 0px 0px 71px -17px rgba(194,194,194,1);
@@ -180,6 +180,14 @@
 	box-shadow: 0px 0px 71px -17px rgba(194,194,194,1);
 	margin-bottom: 50px;
 }
+
+@media(min-width: 768px) {
+	.simple-box-effect {
+		padding: 30px;
+	}
+}
+
+
 @media(max-width: 768px){
 	.who-are-we-mobile{
 		padding-left: 10vw;
