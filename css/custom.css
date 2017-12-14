@@ -217,9 +217,6 @@
 	font-weight: 900;
 }
 
-.mainheaderlt{
-	padding: 17vh 2vw;
-}
 
 @media(max-width: 768px){
 	#maintitleh2lt{
@@ -239,11 +236,12 @@
 	#maintitlep1lt{
 		margin-bottom: 6px;
 		margin-top: 2vh;
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	#maintitleplt{
 		font-weight: 900;
+		font-size: 16px;
 	}
 	.mainheaderlt{
 	padding: 0 4vw;
@@ -267,10 +265,24 @@
 	}
 }
 
+.margin-b-38{
+	margin-bottom:38px!important;
+}
 
+.radiomargin{
+	margin-top: 30px!important;
+}
 
+.container-vertical-align-center{
+	display: flex!important;
+	align-items: center!important;
+}
 
-
-
+.boxes-padding-adjust{
+	padding: 20px!important;
+	margin-bottom: 30px!important;
+	margin-left: 0px;
+	margin-right: 0px;
+}
 
 
