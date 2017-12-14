@@ -217,9 +217,6 @@
 	font-weight: 900;
 }
 
-.mainheaderlt{
-	padding: 17vh 2vw;
-}
 
 @media(max-width: 768px){
 	#maintitleh2lt{
@@ -239,11 +236,12 @@
 	#maintitlep1lt{
 		margin-bottom: 6px;
 		margin-top: 2vh;
-		font-size: 17px;
+		font-size: 16px;
 	}
 
 	#maintitleplt{
 		font-weight: 900;
+		font-size: 16px;
 	}
 	.mainheaderlt{
 	padding: 0 4vw;
@@ -270,11 +268,21 @@
 .inp-fixed-bank-info {
 	text-align: center;
 }
+.margin-b-38{
+	margin-bottom:38px!important;
+}
 
 .inp-bank-info-income {
 	font-weight: bold;
 }
+.radiomargin{
+	margin-top: 30px!important;
+}
 
+.container-vertical-align-center{
+	display: flex!important;
+	align-items: center!important;
+}
 
 /* CSS classes of boxes for selling tickets */
 .sell-ticket-box span{
@@ -294,6 +302,12 @@
     z-index: 3;
     top: 1.2em;
     right: 1.9em;
+}
+.boxes-padding-adjust{
+	padding: 20px!important;
+	margin-bottom: 30px!important;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .sell-ticket-box img{
