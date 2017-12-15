@@ -20,7 +20,7 @@
             <div class="via-1511643825940" via="via-1511643825940" vio="Venlo prueba">
                 <div class="bar bar--sm visible-xs">
                     <div class="container">
-                        <div class="row">
+                        <div class="row container-vertical-align-center">
                             <div class="col-xs-3 col-sm-2">
                                 <a href="/index.html"> <img href="/index.html" class="logo logo-dark" alt="logo" src="img/mainlogo.png"> <img class="logo logo-light" alt="logo" src="img/mainlogo.png"> </a>
                             </div>
@@ -34,7 +34,7 @@
                 </div>
                 <nav id="menu1" class="bar bar-1 hidden-xs">
                     <div class="container">
-                        <div class="row">
+                        <div class="row container-vertical-align-center">
                             <div class="col-md-1 col-sm-2 hidden-xs">
                                 <div class="bar__module">
                                     <a href="index.html"> <img class="logo logo-dark" alt="logo" src="img/mainlogo.png"> <img class="logo logo-light" alt="logo" src="img/logo-light.png"> </a>
@@ -62,10 +62,22 @@
             </div>
         </div>
 
-
-
             <section id="hotstepper">
                 <div class="container">
+                    <div class="row no-margin-sides margin-b-15">
+                        <div class="col-xs-3 text-center">
+                            <i class="icon icon-Checked-User color--primary"></i>
+                        </div>
+                        <div class="col-xs-3 text-center">
+                            <i class="icon icon-Information color--primary"></i>
+                        </div>
+                        <div class="col-xs-3 text-center">
+                            <i class="icon icon-Glasses-3 color--primary"></i>
+                        </div>
+                        <div class="col-xs-3 text-center">
+                            <i class="icon icon-Ticket color--primary"></i>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12 fontsize1">
                             <ul class="process-stepper clearfix" data-process-steps="4">
@@ -116,8 +128,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-xs-6">
-                                    <label class="hidden-xs">Ingresa el código de reserva</label>
-                                    <label class="visible-sm-*">Código de reserva</label>
+                                    <label >Código de reserva</label>
                                     <input type="email" name="email" placeholder="Cód. de reserva">
                                 </div>
                                 <div class="col-sm-3 col-xs-6">
@@ -380,9 +391,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="cta">
                         <h2>Llena con tu información bancaria:</h2><br>
                     </div>
+
                     <div class="row">
                         <div class="simple-box-effect col-md-6 col-md-offset-3">
                             <div class="row">
@@ -413,11 +426,6 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                   <!--  <div class="row text-center">                              
-                                        <h2>Tu ingreso: S/. 100</h2>
-                                        <div>Gastos administrativos: S/. 30</div>
-                                        <div>Comisión venlo: S/. 15</p>
-                                    </div> -->
                                     <div class="row">
                                         <div class="col-sm-12 col-xs-6">
                                             <label>Gastos administrativos</label>
@@ -437,18 +445,32 @@
                                 </div>
                             </div>
                         </div>    
-                    </div>                
+                    </div>
+
+
+                    <div class="row col-md-6 col-md-offset-3 xs-width-100-no-margin no-padding" style="margin-top: -15px;">
+                            <div class="col-xs-2 no-padding validation-switch">
+                                <div class="input-checkbox input-checkbox--switch">
+                                    <input id="checkbox-switch" type="checkbox" name="agree" />
+                                    <label for="checkbox-switch"></label>
+                                </div>
+                            </div>
+                            <div class="col-xs-9 no-padding text-left validation">
+                                <span>Acepto los <a href="#">términos y condiciones.</a> y la <a href="#">política de privacidad</a> de Venlo.</span>
+                            </div>
+                        </div>
+                    
 
                     <div class="row">
-                        <div style="margin-top: 30px;" class="col-sm-4 col-sm-offset-4">
+                        <div class="col-sm-4 col-sm-offset-4" style="margin-top: 15px;">
                             <a class="btn btn--primary type--uppercase" href="/sell3.html">
                                 <font color="#ffffff"><span><b>siguiente</b></span></font>
                             </a>
                         </div>
                     </div>
-                </div>
-            </section>
 
+                </section>
+            
 
             <footer class="footer-7 text-center-xs bg--secondary">
                 <div class="container">
