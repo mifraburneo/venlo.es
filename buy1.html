@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -110,15 +110,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-xs-6 fix1">
-                            <a class="btn datepicker" href="#">
-                                <span class="btn__text">Fecha</span>
-                            </a>
+                            <input class="validate-required datepicker" type="text" name="My Input" placeholder="Fecha" />
                         </div>
                         <div class="col-md-2 col-xs-6 fix1">
-                            <a class="btn" href="#">
-                                <span class="btn__text">Menor Precio</span>
-                            </a>
-                        </div>
+                            <input class="validate-required" type="text" name="My Input" placeholder="VenloID" />
+                        </div> 
                         <div class="col-md-2 col-xs-6 fix1">
                             <div class="input-select">
                                 <select id="select-origen">
@@ -142,16 +138,12 @@
                                     <option value="AQP">Cuzco</option>
                                 </select>
                             </div>
+                        </div>                        
+                        <div class="col-md-2 col-xs-6 fix1">
+                            <input class="validate-required" type="text" name="My Input" placeholder="Menor precio" readonly />
                         </div>
                         <div class="col-md-2 col-xs-6 fix1">
-                            <a class="btn" href="#">
-                                <span class="btn__text">VenloID</span>
-                            </a>
-                        </div> 
-                        <div class="col-md-2 col-xs-6 fix1">
-                            <a class="btn" href="#">
-                                <span class="btn__text">Todos</span>
-                            </a>
+                            <input class="validate-required" type="text" name="My Input" placeholder="Todos" readonly />
                         </div>                       
                     </div>
                 </div>
@@ -162,105 +154,359 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="sell-ticket-box">
-                                <img alt="Image" src="img/lim.jpg">
-                                <span>AA005-V</span>
-                                <div class="info-part">
-                                    <h4><b>Piura <i class="icon icon--xs icon-Arrow-RightinCircle"></i> Lima | 25-DIC-17</b></h4>
-                                    <h5>Precio en LATAM: </h5><p>$323.43 USD</p>
-                                    <h5>Precio en Venlo:</h5> <p>$121.91 USD</p>
+                            <div class="sell-ticket-box">                              
+                                <div class="ticket-selected">
+                                    <i class="icon icon-Add-Bag color--primary confirm-icon"></i>
+                                </div>
+                                <div class="ticket-container">
+                                    <div class="img-container">
+                                        <img alt="Image" src="img/lim.jpg">
+                                        <span class="flight-number">AA005-V</span>
+                                        <span class="flight-discount">10% OFF</span>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg class="buy-space" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                            <path fill="#FFFFFF" d="M7.565,500C7.565,226.869,227.216,3.386,500,3.386V500H7.565z"/>
+                                        </svg>
+                                        <i class="icon icon-Add-Bag color--primary buy-icon"></i>
+                                    </div>
+                                    <div class="info-container">
+                                        <div class="orig-dest-time">
+                                            <h2><b>Piura <i class="icon icon--xs icon-Arrow-Right2"></i> Lima</b></h2>
+                                            <h4>25-DIC-17</h4>
+                                        </div>
+                                        <div class="row flight-times margin-b-20">
+                                            <div class="col-xs-6">
+                                                Salida: <b>8:00 AM</b>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                Llegada: <b>9:00 AM</b>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-xs-2 col-xs-offset-1">
+                                                <i class="icon icon--sm icon-Luggage-Front color--primary" data-tooltip="Incluye equipaje de mano."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Suitcase color--primary disabled" data-tooltip="No incluye un maleta de 23kg."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Chair color--primary" data-tooltip="Puedes reservar tu asiento en este vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Sand-watch color--primary" data-tooltip="1 hora(s) de vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Transform-4 color--primary" data-tooltip="Escala en Trujillo (1h)."></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prices-container">
+                                        <div class="price-box worst-price">
+                                            <div class="airline">LATAM</div>
+                                            <div class="price">US$ 323.43</div>
+                                        </div><div class="price-box best-price">
+                                            <div class="airline">VENLO</div>    
+                                            <div class="price">US$ 121.91</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature feature-1"> <img alt="Image" src="img/aqp.jpg">
-                                <div class="feature__body boxed boxed--border">
-                                    <h4><b>Lima > Arequipa | 25-DIC-17</b></h4>
-                                    <h5>Precio en LATAM: </h5><p>$323.43 USD</p>
-                                    <h5>Precio en Venlo:</h5> <p>$121.91 USD</p>
-                                    <div style="align-content: right; text-align: right;">                                   
-                                        <div class="input-checkbox">
-                                            <input id="checkbox2" type="checkbox" name="agree" />
-                                            <label for="checkbox"></label>
-                                        </div>                                       
+                            <div class="sell-ticket-box">                              
+                                <div class="ticket-selected">
+                                    <i class="icon icon-Add-Bag color--primary confirm-icon"></i>
+                                </div>
+                                <div class="ticket-container">
+                                    <div class="img-container">
+                                        <img alt="Image" src="img/aqp.jpg">
+                                        <span class="flight-number">AA005-V</span>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg class="buy-space" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                            <path fill="#FFFFFF" d="M7.565,500C7.565,226.869,227.216,3.386,500,3.386V500H7.565z"/>
+                                        </svg>
+                                        <i class="icon icon-Add-Bag color--primary buy-icon"></i>
                                     </div>
-                                    <span class="label">AA003-I</span>
+                                    <div class="info-container">
+                                        <div class="orig-dest-time">
+                                            <h2><b>Lima <i class="icon icon--xs icon-Arrow-Right2"></i> Arequipa</b></h2>
+                                            <h4>25-DIC-17</h4>
+                                        </div>
+                                        <div class="row flight-times margin-b-20">
+                                            <div class="col-xs-6">
+                                                Salida: <b>8:00 AM</b>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                Llegada: <b>9:00 AM</b>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-xs-2 col-xs-offset-1">
+                                                <i class="icon icon--sm icon-Luggage-Front color--primary" data-tooltip="Incluye equipaje de mano."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Suitcase color--primary disabled" data-tooltip="No incluye un maleta de 23kg."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Chair color--primary" data-tooltip="Puedes reservar tu asiento en este vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Sand-watch color--primary" data-tooltip="1 hora(s) de vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Transform-4 color--primary disabled" data-tooltip="Sin escalas."></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prices-container">
+                                        <div class="price-box worst-price">
+                                            <div class="airline">LATAM</div>
+                                            <div class="price">US$ 323.43</div>
+                                        </div><div class="price-box best-price">
+                                            <div class="airline">VENLO</div>    
+                                            <div class="price">US$ 121.91</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature feature-1"> <img alt="Image" src="img/tru.jpg">
-                                <div class="feature__body boxed boxed--border">
-                                    <h4><b>Lima > Trujillo | 25-DIC-17</b></h4>
-                                    <h5>Precio en LATAM: </h5><p>$293.82 USD</p>
-                                    <h5>Precio en Venlo:</h5> <p>$99.99 USD</p>
-                                    <div style="align-content: right; text-align: right;">                                   
-                                        <div class="input-checkbox">
-                                            <input id="checkbox3" type="checkbox" name="agree" />
-                                            <label for="checkbox"></label>
-                                        </div>                                       
-                                    </div>
-                                    <span class="label">AA001-I</span>
+                            <div class="sell-ticket-box">                              
+                                <div class="ticket-selected">
+                                    <i class="icon icon-Add-Bag color--primary confirm-icon"></i>
                                 </div>
-
+                                <div class="ticket-container">
+                                    <div class="img-container">
+                                        <img alt="Image" src="img/tru.jpg">
+                                        <span class="flight-number">AA005-V</span>
+                                        <span class="flight-discount">30% OFF</span>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg class="buy-space" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                            <path fill="#FFFFFF" d="M7.565,500C7.565,226.869,227.216,3.386,500,3.386V500H7.565z"/>
+                                        </svg>
+                                        <i class="icon icon-Add-Bag color--primary buy-icon"></i>
+                                    </div>
+                                    <div class="info-container">
+                                        <div class="orig-dest-time">
+                                            <h2><b>Lima <i class="icon icon--xs icon-Arrow-Right2"></i> Trujillo</b></h2>
+                                            <h4>25-DIC-17</h4>
+                                        </div>
+                                        <div class="row flight-times margin-b-20">
+                                            <div class="col-xs-6">
+                                                Salida: <b>8:00 AM</b>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                Llegada: <b>9:00 AM</b>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-xs-2 col-xs-offset-1">
+                                                <i class="icon icon--sm icon-Luggage-Front color--primary" data-tooltip="Incluye equipaje de mano."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Suitcase color--primary disabled" data-tooltip="No incluye un maleta de 23kg."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Chair color--primary" data-tooltip="Puedes reservar tu asiento en este vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Sand-watch color--primary" data-tooltip="1 hora(s) de vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Transform-4 color--primary" data-tooltip="Escala en Trujillo (1h)."></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prices-container">
+                                        <div class="price-box worst-price">
+                                            <div class="airline">LATAM</div>
+                                            <div class="price">US$ 323.43</div>
+                                        </div><div class="price-box best-price">
+                                            <div class="airline">VENLO</div>    
+                                            <div class="price">US$ 121.91</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>  
-            <section>
-                <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="feature feature-1"> <img alt="Image" src="img/piu.jpg">
-                                <div class="feature__body boxed boxed--border">
-                                    <h4><b>Lima > Piura | 25-DIC-17</b></h4>
-                                    <h5>Precio en LATAM: </h5><p>$323.43 USD</p>
-                                    <h5>Precio en Venlo:</h5> <p>$121.91 USD</p>
-                                    <div style="align-content: right; text-align: right;">                                   
-                                        <div class="input-checkbox">
-                                            <input id="checkbox4" type="checkbox" name="agree" />
-                                            <label for="checkbox"></label>
-                                        </div>                                       
+                            <div class="sell-ticket-box">                              
+                                <div class="ticket-selected">
+                                    <i class="icon icon-Add-Bag color--primary confirm-icon"></i>
+                                </div>
+                                <div class="ticket-container">
+                                    <div class="img-container">
+                                        <img alt="Image" src="img/piu.jpg">
+                                        <span class="flight-number">AA005-V</span>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg class="buy-space" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                            <path fill="#FFFFFF" d="M7.565,500C7.565,226.869,227.216,3.386,500,3.386V500H7.565z"/>
+                                        </svg>
+                                        <i class="icon icon-Add-Bag color--primary buy-icon"></i>
                                     </div>
-                                    <span class="label">AA017-I</span>
+                                    <div class="info-container">
+                                        <div class="orig-dest-time">
+                                            <h2><b>Lima <i class="icon icon--xs icon-Arrow-Right2"></i> Piura</b></h2>
+                                            <h4>25-DIC-17</h4>
+                                        </div>
+                                        <div class="row flight-times margin-b-20">
+                                            <div class="col-xs-6">
+                                                Salida: <b>8:00 AM</b>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                Llegada: <b>9:00 AM</b>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-xs-2 col-xs-offset-1">
+                                                <i class="icon icon--sm icon-Luggage-Front color--primary" data-tooltip="Incluye equipaje de mano."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Suitcase color--primary disabled" data-tooltip="No incluye un maleta de 23kg."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Chair color--primary" data-tooltip="Puedes reservar tu asiento en este vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Sand-watch color--primary" data-tooltip="1 hora(s) de vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Transform-4 color--primary" data-tooltip="Escala en Trujillo (1h)."></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prices-container">
+                                        <div class="price-box worst-price">
+                                            <div class="airline">LATAM</div>
+                                            <div class="price">US$ 323.43</div>
+                                        </div><div class="price-box best-price">
+                                            <div class="airline">VENLO</div>    
+                                            <div class="price">US$ 121.91</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature feature-1"> <img alt="Image" src="img/lim.jpg">
-                                <div class="feature__body boxed boxed--border">
-                                    <h4><b>Piura > Lima | 28-DIC-17</b></h4>
-                                    <h5>Precio en LATAM: </h5><p>$243.40 USD</p>
-                                    <h5>Precio en Venlo:</h5> <p>$121.91 USD</p>
-                                    <div style="align-content: right; text-align: right;">                                   
-                                        <div class="input-checkbox">
-                                            <input id="checkbox5" type="checkbox" name="agree" />
-                                            <label for="checkbox"></label>
-                                        </div>                                       
+                            <div class="sell-ticket-box">                              
+                                <div class="ticket-selected">
+                                    <i class="icon icon-Add-Bag color--primary confirm-icon"></i>
+                                </div>
+                                <div class="ticket-container">
+                                    <div class="img-container">
+                                        <img alt="Image" src="img/lim.jpg">
+                                        <span class="flight-number">AA005-V</span>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg class="buy-space" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                            <path fill="#FFFFFF" d="M7.565,500C7.565,226.869,227.216,3.386,500,3.386V500H7.565z"/>
+                                        </svg>
+                                        <i class="icon icon-Add-Bag color--primary buy-icon"></i>
                                     </div>
-                                    <span class="label">AA017-V</span>
+                                    <div class="info-container">
+                                        <div class="orig-dest-time">
+                                            <h2><b>Piura <i class="icon icon--xs icon-Arrow-Right2"></i> Lima</b></h2>
+                                            <h4>25-DIC-17</h4>
+                                        </div>
+                                        <div class="row flight-times margin-b-20">
+                                            <div class="col-xs-6">
+                                                Salida: <b>8:00 AM</b>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                Llegada: <b>9:00 AM</b>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-xs-2 col-xs-offset-1">
+                                                <i class="icon icon--sm icon-Luggage-Front color--primary" data-tooltip="Incluye equipaje de mano."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Suitcase color--primary disabled" data-tooltip="No incluye un maleta de 23kg."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Chair color--primary" data-tooltip="Puedes reservar tu asiento en este vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Sand-watch color--primary" data-tooltip="1 hora(s) de vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Transform-4 color--primary disabled" data-tooltip="Sin escalas."></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prices-container">
+                                        <div class="price-box worst-price">
+                                            <div class="airline">LATAM</div>
+                                            <div class="price">US$ 323.43</div>
+                                        </div><div class="price-box best-price">
+                                            <div class="airline">VENLO</div>    
+                                            <div class="price">US$ 121.91</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature feature-1"> <img alt="Image" src="img/cix.jpg">
-                                <div class="feature__body boxed boxed--border">
-                                    <h4><b>Lima > Chiclayo | 25-DIC-17</b></h4>
-                                    <h5>Precio en LATAM: </h5><p>$293.82 USD</p>
-                                    <h5>Precio en Venlo:</h5> <p>$99.99 USD</p>
-                                    <div style="align-content: right; text-align: right;">                                   
-                                        <div class="input-checkbox">
-                                            <input id="checkbox6" type="checkbox" name="agree" />
-                                            <label for="checkbox"></label>
-                                        </div>                                       
-                                    </div>
-                                    <span class="label">AA002-I</span>
+                            <div class="sell-ticket-box">                              
+                                <div class="ticket-selected">
+                                    <i class="icon icon-Add-Bag color--primary confirm-icon"></i>
                                 </div>
-
+                                <div class="ticket-container">
+                                    <div class="img-container">
+                                        <img alt="Image" src="img/cix.jpg">
+                                        <span class="flight-number">AA005-V</span>
+                                        <span class="flight-discount">30% OFF</span>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg class="buy-space" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                            <path fill="#FFFFFF" d="M7.565,500C7.565,226.869,227.216,3.386,500,3.386V500H7.565z"/>
+                                        </svg>
+                                        <i class="icon icon-Add-Bag color--primary buy-icon"></i>
+                                    </div>
+                                    <div class="info-container">
+                                        <div class="orig-dest-time">
+                                            <h2><b>Lima <i class="icon icon--xs icon-Arrow-Right2"></i> Chiclayo</b></h2>
+                                            <h4>25-DIC-17</h4>
+                                        </div>
+                                        <div class="row flight-times margin-b-20">
+                                            <div class="col-xs-6">
+                                                Salida: <b>8:00 AM</b>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                Llegada: <b>9:00 AM</b>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-xs-2 col-xs-offset-1">
+                                                <i class="icon icon--sm icon-Luggage-Front color--primary" data-tooltip="Incluye equipaje de mano."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Suitcase color--primary disabled" data-tooltip="No incluye un maleta de 23kg."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Chair color--primary" data-tooltip="Puedes reservar tu asiento en este vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Sand-watch color--primary" data-tooltip="1 hora(s) de vuelo."></i>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <i class="icon icon--sm icon-Transform-4 color--primary" data-tooltip="Escala en Trujillo (1h)."></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prices-container">
+                                        <div class="price-box worst-price">
+                                            <div class="airline">LATAM</div>
+                                            <div class="price">US$ 323.43</div>
+                                        </div><div class="price-box best-price">
+                                            <div class="airline">VENLO</div>    
+                                            <div class="price">US$ 121.91</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </section>
             <section class="text-center">
@@ -297,6 +543,7 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/datepicker.js"></script>
+        <script src="js/main.js"></script>
     </body>
 
 </html>
