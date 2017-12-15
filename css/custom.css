@@ -176,7 +176,7 @@
 
 .simple-box-effect {
 	background-color: #f7f7f7;	
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     border: 1px solid #dddddd;
     -webkit-box-shadow: 0px 0px 71px -17px rgba(194,194,194,1);
@@ -486,3 +486,58 @@
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
+
+
+.subh4{
+	color: #666666;
+	font-size: 17px;
+	margin-top: 14px
+}
+
+.validation{
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+@media(max-width: 768px){
+	.h1exception{
+		font-size: 42px
+	}
+	.validation{
+		margin-left: 15px;
+		margin-top: 0px; 
+	}
+	.validation-switch{
+		margin-top: 5px;
+	}
+	.xs-width-100-no-margin{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.main-menu-btn{
+	padding-top: 7px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.slides h4{
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 0px!important
+}
+
+
+
+
+
+
+
+
+
+
+
+

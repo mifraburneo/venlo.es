@@ -4744,7 +4744,7 @@ section.parallax .row .background-image-holder {
   font-family: 'Open Sans', 'Roboto', 'Helvetica', Sans-Serif;
 }
 .bar .logo {
-  max-height: 4rem;
+  max-height: 50px;
   max-width: none;
 }
 .menu-horizontal > li > a,
@@ -9002,6 +9002,7 @@ footer.footer-6.bg--primary .footer__lower {
 }
 footer.footer-7 {
   padding: 1.85714286em 0;
+  padding-bottom: 3px;
 }
 @media all and (min-width: 768px) {
   footer .list-inline + .btn {
