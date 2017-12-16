@@ -517,6 +517,12 @@
 	}
 }
 
+@media(max-width: 568px){
+	.validation-switch{
+		margin-top: 19px;
+	}
+}
+
 .main-menu-btn{
 	padding-top: 7px;
 	padding-bottom: 6px;
